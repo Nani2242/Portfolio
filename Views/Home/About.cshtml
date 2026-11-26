@@ -1,0 +1,12 @@
+@{ ViewData["Title"] = "About"; }
+<section class="page-hero"><div class="container"><p class="eyebrow">GET TO KNOW ME</p><h1>About <span class="gradient">Me</span></h1><p class="lead muted">A .NET developer focused on backend development, API integrations and practical software solutions.</p></div></section>
+<section class="section"><div class="container narrow"><h2>Professional summary</h2>
+<p class="copy">I am a .NET Developer with around 3 years of experience building web applications, REST APIs and integration workflows. My technical experience includes C#, ASP.NET Core, ASP.NET MVC, Web API, SQL Server, Entity Framework Core and Dapper.</p>
+<p class="copy">I have worked on travel technology and eKYC-related integrations, including API implementation, request/response handling, debugging and database operations. I have also built an AI chatbot project using the Google Gemini API.</p>
+<h2 class="mt-5">Technical skills</h2><div class="skills">@foreach (var skill in new[] {"C#", ".NET 8", "ASP.NET Core", "ASP.NET MVC", "Web API", "EF Core", "Dapper", "LINQ", "SQL Server", "REST APIs", "JavaScript", "HTML", "CSS", "Bootstrap", "Git", "Postman", "Gemini API"}) { <span>@skill</span> }</div>
+<h2 class="mt-5">Professional experience</h2><div class="timeline">
+<div><h3>.NET Developer · Innodigital Solution Pvt. Ltd.</h3><small>2026</small><p>API implementation and end-to-end eKYC workflows, including integration testing and troubleshooting.</p></div>
+<div><h3>Software Developer · I2SPACE Web Technologies Pvt. Ltd.</h3><small>October 2023 – June 2026</small><p>Developed .NET applications and integrated third-party bus, flight and hotel APIs for travel booking workflows.</p></div></div>
+<h2 class="mt-5">Education</h2><article class="feature"><h3>B.Com – Computer Applications</h3><p>Yogi Vemana University · 2022</p></article>
+<h2 class="mt-5">Additional learning</h2><article class="feature"><h3>BE10X – Artificial Intelligence</h3><p>Built a chatbot project using the Google Gemini API.</p></article>
+</div></section>

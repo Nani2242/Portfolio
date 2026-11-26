@@ -1,0 +1,7 @@
+@page
+@model GudiPortfolio.Pages.ProjectsModel
+@{ ViewData["Title"] = "Projects"; }
+<section class="page-hero"><div class="container"><p class="eyebrow">SELECTED WORK</p><h1>My <span class="gradient">Projects</span></h1><p class="lead muted">A selection of applications and integrations I've worked on or built.</p></div></section>
+<section class="section"><div class="container"><div class="row g-4">
+@foreach (var project in Model.Projects) { <div class="col-lg-4 col-md-6"><article class="project-card h-100"><p class="eyebrow">@project.Category</p><h2>@project.Title</h2><p>@project.Description</p><div class="skills compact">@foreach (var tech in project.Technologies) { <span>@tech</span> }</div></article></div> }
+</div></div></section>
